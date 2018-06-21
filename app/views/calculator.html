@@ -1,0 +1,33 @@
+<div class="calculator">
+    <h2 id="app-description">This is the calculator view.</h2>
+    <input class="col-xs-12 col-sm-12 col-md-12" type="text" disabled="disabled" id="answer" value="{{ cal.display }}"/>
+    <div class="row">
+        <button class="bg-danger ctrl col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('AC')">AC</button>
+        <button class="bg-danger ctrl col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('CE')">CE</button>
+        <button class="bg-warning col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('%')">%</button>
+        <button class="bg-info col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('/')">÷</button>
+    </div>
+    <div class="row">
+        <button class="bg-primary col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('7')">7</button>
+        <button class="bg-primary col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('8')">8</button>
+        <button class="bg-primary col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('9')">9</button>
+        <button class="bg-info col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('*')">x</button>
+    </div>
+    <div class="row">
+        <button class="bg-primary col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('4')">4</button>
+        <button class="bg-primary col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('5')">5</button>
+        <button class="bg-primary col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('6')">6</button>
+        <button class="bg-info col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('-')">-</button>
+    </div>
+    <div class="row">
+        <button class="bg-primary col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('1')">1</button>
+        <button class="bg-primary col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('2')">2</button>
+        <button class="bg-primary col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('3')">3</button>
+        <button class="bg-info col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('+')">+</button>
+    </div>
+    <div class="row">
+        <button class="bg-primary col-xs-6 col-sm-6 col-md-6" ng-click="cal.getEntries('0');">0</button>
+        <button class="col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('.');">.</button>
+        <button class="bg-success col-xs-3 col-sm-3 col-md-3" ng-click="cal.getEntries('=');">=</button>
+    </div>
+</div>
